@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Portfolio Daniel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&amp;family=Inter:wght@400;600;700&amp;display=swap">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="navbar" aria-label="Navegación principal">
+            <a href="index.html" class="logo" aria-label="Inicio">
+                <img class="logo-image" src="assets/img/logo-dg.png" alt="DG">
+            </a>
+
+            <button class="menu-toggle" type="button" aria-controls="primary-navigation" aria-expanded="false">
+                <span class="menu-toggle-icon" aria-hidden="true"></span>
+                <span class="sr-only">Abrir menú</span>
+            </button>
+
+            <ul class="nav-links" id="primary-navigation">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html">Proyectos</a></li>
+                <li><a href="sobre-mi.html">Sobre mí</a></li>
+                <li><a href="contacto.html" aria-current="page">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="contacto" class="main-content">
+        <section class="projects-section" aria-labelledby="contact-title">
+            <h1 id="contact-title">CONTACTO</h1>
+
+            <p class="projects-intro">
+                ¿Tienes alguna pregunta o propuesta? Ponte en contacto conmigo
+                a través del siguiente formulario.
+            </p>
+
+            <form class="contact-form" novalidate>
+                <div class="form-field">
+                    <label for="nombre">Nombre</label>
+                    <input id="nombre" name="nombre" type="text" placeholder="Escribe tu nombre"
+                        aria-describedby="nombre-error" required>
+                    <p class="field-error" id="nombre-error" role="alert"></p>
+                </div>
+
+                <div class="form-field">
+                    <label for="email">Correo electrónico</label>
+                    <input id="email" name="email" type="email" placeholder="ejemplo@correo.com"
+                        aria-describedby="email-error" required>
+                    <p class="field-error" id="email-error" role="alert"></p>
+                </div>
+
+                <div class="form-field">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje..."
+                        aria-describedby="mensaje-error" required></textarea>
+                    <p class="field-error" id="mensaje-error" role="alert"></p>
+                </div>
+
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 Daniel Gallego · Portfolio</p>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+</body>
+
+</html>

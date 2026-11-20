@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre mí | Portfolio Daniel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&amp;family=Inter:wght@400;600;700&amp;display=swap">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="navbar" aria-label="Navegación principal">
+            <a href="index.html" class="logo" aria-label="Inicio">
+                <img class="logo-image" src="assets/img/logo-dg.png" alt="DG">
+            </a>
+
+            <button class="menu-toggle" type="button" aria-controls="primary-navigation" aria-expanded="false">
+                <span class="menu-toggle-icon" aria-hidden="true"></span>
+                <span class="sr-only">Abrir menú</span>
+            </button>
+
+            <ul class="nav-links" id="primary-navigation">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html">Proyectos</a></li>
+                <li><a href="sobre-mi.html" aria-current="page">Sobre mí</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="sobre-mi" class="main-content">
+        <section class="projects-section" aria-labelledby="about-title">
+            <h1 id="about-title">SOBRE MÍ</h1>
+
+            <p class="projects-intro">
+                Conoce un poco más sobre mí, mi formación y mis habilidades
+                en el desarrollo web.
+            </p>
+
+            <div class="projects-grid">
+                <article class="project-card">
+                    <img src="assets/img/rectangle-5-1.png" alt="Estudiante trabajando con un portátil"
+                        class="project-image">
+                    <h2>Quién soy</h2>
+                    <p>
+                        Soy estudiante de Desarrollo de Aplicaciones Web.
+                        Me interesa la tecnología, la programación y la creación
+                        de proyectos digitales.
+                    </p>
+                </article>
+
+                <article class="project-card">
+                    <img src="assets/img/rectangle-3-1.png" alt="Estudiante realizando una actividad de formación"
+                        class="project-image">
+                    <h2>Mi formación</h2>
+                    <p>
+                        He estudiado Sistemas Microinformáticos y Redes y actualmente
+                        curso Desarrollo de Aplicaciones Web.
+                    </p>
+                </article>
+
+                <article class="project-card">
+                    <img src="assets/img/rectangle-7-1.png" alt="Código mostrado en un portátil"
+                        class="project-image">
+                    <h2>Mis habilidades</h2>
+                    <p>
+                        Tengo conocimientos de HTML, CSS, JavaScript, PHP,
+                        bases de datos y diseño de interfaces con Figma.
+                    </p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 Daniel Gallego · Portfolio</p>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+</body>
+
+</html>

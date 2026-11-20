@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis proyectos | Portfolio Daniel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&amp;family=Inter:wght@400;600;700&amp;display=swap">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="navbar" aria-label="Navegación principal">
+            <a href="index.html" class="logo" aria-label="Inicio">
+                <img class="logo-image" src="assets/img/logo-dg.png" alt="DG">
+            </a>
+
+            <button class="menu-toggle" type="button" aria-controls="primary-navigation" aria-expanded="false">
+                <span class="menu-toggle-icon" aria-hidden="true"></span>
+                <span class="sr-only">Abrir menú</span>
+            </button>
+
+            <ul class="nav-links" id="primary-navigation">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html" aria-current="page">Proyectos</a></li>
+                <li><a href="sobre-mi.html">Sobre mí</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="proyectos" class="main-content">
+        <section class="projects-section" aria-labelledby="projects-title">
+            <h1 id="projects-title">MIS PROYECTOS</h1>
+
+            <p class="projects-intro">
+                Una selección de proyectos realizados durante mi formación
+                en Desarrollo de Aplicaciones Web.
+            </p>
+
+            <div class="projects-grid">
+                <article class="project-card">
+                    <img src="assets/img/tienda-online.png" alt="Persona usando una tienda online en un portátil"
+                        class="project-image">
+                    <h2>Tienda Online</h2>
+                    <p>
+                        Diseño de una tienda web con catálogo de productos,
+                        filtros y carrito de compra.
+                    </p>
+                </article>
+
+                <article class="project-card">
+                    <img src="assets/img/diseno-grafico.png" alt="Pantalla con herramientas de diseño gráfico"
+                        class="project-image">
+                    <h2>Diseño Gráfico</h2>
+                    <p>
+                        Creación de logotipos, carteles y diseños digitales
+                        utilizando herramientas de diseño.
+                    </p>
+                </article>
+
+                <article class="project-card">
+                    <img src="assets/img/desarrollo-web.png" alt="Pantalla con código de desarrollo web"
+                        class="project-image">
+                    <h2>Desarrollo Web</h2>
+                    <p>
+                        Desarrollo de páginas web utilizando HTML, CSS
+                        y JavaScript.
+                    </p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 Daniel Gallego · Portfolio</p>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+</body>
+
+</html>
